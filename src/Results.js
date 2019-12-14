@@ -40,7 +40,7 @@ class Results extends React.Component {
                     <p className="resultsTitle"><u>Search Results</u></p>
                     {this.state.top_ten && this.state.top_ten.map((doc, i) => {
                         return (
-                            <div key={i}>
+                            <div key={i+1}>
                                 <p className="resultsNumber"><b>{i}.</b></p>
                                 <table>
                                     <tbody>
@@ -57,7 +57,7 @@ class Results extends React.Component {
                                             <b>Link: </b>
                                         </td>
                                         <td>
-                                            <a href={"#" + doc.title} onClick={() => this.props.showDocument(doc.text)}>Full Document</a>
+                                            <a href={""} onClick={() => this.props.showDocument(doc.text)}>Full Document</a>
                                         </td>
                                     </tr>
                                     </tbody>

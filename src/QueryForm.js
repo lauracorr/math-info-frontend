@@ -27,8 +27,8 @@ class QueryForm extends React.Component {
                 </div>
                 <div className="resultSelection">
                     <p className="resultTypeLabel"><u>Result Type:</u></p>
-                    <input type="radio" className="resultTypeLabel" value="bm25" checked={this.state.model == 'bm25'} onChange={this.handleModelChange}/> BM25
-                    <input type="radio" className="resultTypeLabel" value="query_likelihood" checked={this.state.model == 'query_likelihood'} onChange={this.handleModelChange}/> Query Likelihood
+                    <input type="radio" className="resultTypeLabel" value="bm25" checked={this.state.model === 'bm25'} onChange={this.handleModelChange}/> BM25
+                    <input type="radio" className="resultTypeLabel" value="query_likelihood" checked={this.state.model === 'query_likelihood'} onChange={this.handleModelChange}/> Query Likelihood
                 </div>
                 <input type="submit" className="submitButton" value="Search" />
             </form>

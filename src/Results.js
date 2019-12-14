@@ -57,7 +57,7 @@ class Results extends React.Component {
                                             <b>Link: </b>
                                         </td>
                                         <td>
-                                            <a href={"#" + doc.line} onClick={() => this.props.showDocument(doc.link)}>Full Document</a>
+                                            <a href={"#" + doc.title} onClick={() => this.props.showDocument(doc.text)}>Full Document</a>
                                         </td>
                                     </tr>
                                     </tbody>

@@ -28,7 +28,7 @@ class App extends React.Component {
   showDocument(document) {
     this.setState({
       view: 'document',
-      transcript: document
+      document: document
     });
   }
 
